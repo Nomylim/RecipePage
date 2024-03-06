@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400, 600, 700;
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100svh;
+    gap: 2rem;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 50rem;
+}
+ 
+img{
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+h1{
+    font-family: 'YoungSerif',sans-serif;
+    margin: 20px 0 20px 0;
+    color: hsl(24, 5%, 18%);
+}
+
+
+p{
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: hsl(24, 5%, 18%);
+}
+
+.preptime{
+    align-self: stretch;
+    background-color: hsl(332, 51%, 98%);
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+.preptime h2{
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+    margin: 5px;
+}
+
+.preptime ul{
+    list-style: none;
+}
+
+.preptime li::before{
+    content: "\2022";
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+.preptime li{
+    font-size: 14px;
+    margin-top: 5px;
+    color: hsl(24, 5%, 18%);
+}
+
+h2{
+    margin-bottom: 15px;
+    color: hsl(14, 45%, 36%);
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+li{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: hsl(24, 5%, 18%);
+    counter-increment: li;
+    padding-left: 0.5rem;;
+    
+}
+#Instructions{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+}
+
+ol{
+    list-style: none;
+    counter-reset: li;
+    padding-left: 0;
+}
+
+ol li{
+    list-style-position: outside;
+}
+
+ol li::before{
+    content: counter(li) ".";
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1rem;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+
+.table{
+    padding-left: 15px;
+    margin-top: 20px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50%;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.table1{
+    padding-left: 15px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    column-gap: 52%;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.table2{
+    padding-left: 15px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    column-gap: 51%;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.table3{
+    padding-left: 15px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    column-gap: 54%;
+
+}
+
+#Nutrition{
+    align-self: stretch;
+}
+
+#Nutrition strong{
+    color: hsl(14, 45%, 36%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
